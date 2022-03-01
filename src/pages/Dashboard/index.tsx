@@ -16,6 +16,13 @@ interface FoodDTO {
   available: boolean;
 }
 
+interface FoodInput {
+  image: string;
+  name: string;
+  description: string;
+  price: string;
+}
+
 const Dashboard = () => {
   const [foods, setFoods] = useState<FoodDTO[]>([]);
   const [editingFood, setEditingFood] = useState<FoodDTO>({} as FoodDTO);
@@ -32,7 +39,7 @@ const Dashboard = () => {
     loadFoods();
   }, []);
 
-  async function handleAddFood(food: FoodDTO) {
+  async function handleAddFood(food: FoodInput) {
     try {
       const response = await api.post('/foods', {
         ...food,
