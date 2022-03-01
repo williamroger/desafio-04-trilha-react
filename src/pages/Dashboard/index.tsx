@@ -52,7 +52,7 @@ const Dashboard = () => {
     }
   }
 
-  async function handleUpdateFood(food: FoodDTO) {
+  async function handleUpdateFood(food: FoodInput) {
     try {
       const foodUpdated = await api.put(
         `/foods/${editingFood.id}`,
