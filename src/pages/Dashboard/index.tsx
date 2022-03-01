@@ -106,7 +106,7 @@ const Dashboard = () => {
       />
 
       <FoodsContainer data-testid="foods-list">
-        {/* {foods &&
+        {foods &&
           foods.map(food => (
             <Food
               key={food.id}
@@ -114,7 +114,7 @@ const Dashboard = () => {
               handleDelete={handleDeleteFood}
               handleEditFood={handleEditFood}
             />
-          ))} */}
+          ))}
       </FoodsContainer>
     </>
   );
