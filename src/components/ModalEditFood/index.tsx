@@ -47,7 +47,6 @@ const ModalEditFood = ({ isOpen, setIsOpen, editingFood, handleUpdateFood }: Mod
         <Input 
           name="image" 
           placeholder="Cole o link aqui" 
-          value={data.image}
           onChange={(event: { target: { value: any; }; }) => setData({
             ...data,
             image: event.target.value,
@@ -57,7 +56,6 @@ const ModalEditFood = ({ isOpen, setIsOpen, editingFood, handleUpdateFood }: Mod
         <Input 
           name="name" 
           placeholder="Ex: Moda Italiana" 
-          value={data.name}
           onChange={(event: { target: { value: any; }; }) => setData({
             ...data,
             name: event.target.value,
@@ -67,7 +65,6 @@ const ModalEditFood = ({ isOpen, setIsOpen, editingFood, handleUpdateFood }: Mod
         <Input 
           name="price" 
           placeholder="Ex: 19.90" 
-          value={data.price}
           onChange={(event: { target: { value: any; }; }) => setData({
             ...data,
             price: event.target.value,
@@ -77,7 +74,6 @@ const ModalEditFood = ({ isOpen, setIsOpen, editingFood, handleUpdateFood }: Mod
         <Input 
           name="description" 
           placeholder="Descrição" 
-          value={data.description}
           onChange={(event: { target: { value: any; }; }) => setData({
             ...data,
             description: event.target.value,
